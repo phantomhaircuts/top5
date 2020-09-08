@@ -36,6 +36,15 @@ h2 {
   font-size: 1rem;
 }
 
+p {
+  font-family: monospace;
+  font-size: 12px;
+  background-color: #feffeb;
+  color: #000000;
+padding: 2em;
+margin: 0;
+}
+
 .head {
   margin: 2em;
   padding: 2em;
@@ -55,11 +64,40 @@ h2 {
   grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
   /* background: #6d6d6d; */
 }
-.list .li-body {
-  /* border: 1px solid #ffe066; */
-  /* border-radius: 5px; */
-  display: flex;
-  flex-direction: column;
+/* .li .li-body {
+transition: transform 0.8s;
+transform-style: preserve-3d;
+} */
+
+.li-body {
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.li-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ transition: transform 0.8s;
+ transform-style: preserve-3d;
+}
+
+.li-body:hover .li-inner {
+  transform: rotateY(180deg);
+}
+
+.li-body-f, .li-body-b {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.li-body-b {
+  color: red;
+  transform: rotateY(180deg);
 }
 
 .list .li-img {
