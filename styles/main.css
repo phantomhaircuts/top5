@@ -6,6 +6,7 @@ body {
   font: 1.2em Helvetica, arial, sans-serif;
   background-image: url("../assets/BG2.jpg");
   background-position: left;
+    background: #6d6d6d;
 }
 
 /* .wrapper {
