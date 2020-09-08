@@ -6,7 +6,7 @@ body {
   font: 1.2em Helvetica, arial, sans-serif;
   background-image: url("../assets/BG2.jpg");
   background-position: left;
-    background: #6d6d6d;
+  background: #6d6d6d;
 }
 
 /* .wrapper {
@@ -39,11 +39,11 @@ h2 {
 
 p {
   font-family: monospace;
-  font-size: 12px;
   background-color: #feffeb;
   color: #000000;
-padding: 2em;
-margin: 0;
+  padding: 2em;
+  margin: 0;
+  overflow-y: scroll;
 }
 
 .head {
@@ -77,11 +77,11 @@ transform-style: preserve-3d;
 }
 
 .li-inner {
- position: relative;
- width: 100%;
- height: 100%;
- transition: transform 0.8s;
- transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .li-body:hover .li-inner {
@@ -90,10 +90,10 @@ transform-style: preserve-3d;
 
 .li-body-f, .li-body-b {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .li-body-b {
