@@ -4,6 +4,8 @@
 
 body {
   font: 1.2em Helvetica, arial, sans-serif;
+  background-image: url("../assets/bg_2.jpg");
+  background-position: left;
 }
 
 /* .wrapper {
@@ -38,10 +40,10 @@ h2 {
   margin: 2em;
   padding: 2em;
   color: #feffeb;
-  background-image: url('../assets/bg_1.jpg');
+  /* background-image: url('../assets/bg_1.jpg'); */
   background-position: center;
   background-size: contain;
-
+  background-color: #000000;
 }
 
 .list {
@@ -66,10 +68,7 @@ h2 {
 
 .list .li-footer {
   margin-top: auto;
-  border-top: 1px solid #feffeb;
+  /* border-top: 1px solid #feffeb; */
   padding: 10px;
   text-align: center;
-}
-.list .li-body {
-  padding: 10px;
 }
